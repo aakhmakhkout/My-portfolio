@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT CORNER</title>
+    <link rel="stylesheet" href="/school_site/css/students.css" />
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <h2>Students Corner</h2>
+      <a href="/school_site/index.html">Home</a>
+    </nav>
+
+    <main class="container">
+      <h3>REGESTRATION FORM</h3>
+
+      <section class="form_sec">
+        <form name="frm" action="webpage3.html">
+          <div class="details_sec">
+            <!-- <label for="ist_name">First Name: </label> -->
+            <input
+              type="text"
+              name="stdname"
+              id="ist_name"
+              class="inp_1"
+              required
+              autocomplete="off"
+              placeholder="First name"
+            />
+            <div class="pro-img">
+              <input type="file" name="img" id="image" />
+            </div>
+
+            <!-- <label for="sur_name">Sur Name: </label> -->
+            <input
+              type="text"
+              name="stdname"
+              id="sur_name"
+              required
+              autocomplete="off"
+              placeholder="Sur name"
+            />
+
+            <!-- <label for="last_name">Last Name: </label> -->
+            <input
+              type="text"
+              name="stdname"
+              id="last_name"
+              required
+              autocomplete="off"
+              placeholder="Last name"
+            />
+
+            <!-- <label for="s_o">Son Of / Doughter Of: </label> -->
+            <input
+              type="text"
+              name="parentage"
+              id="s_o"
+              required
+              autocomplete="off"
+              placeholder="Father's name"
+            />
+
+            <!-- <label for="mother_name">Mother's Name: </label> -->
+            <input
+              type="text"
+              name="parentage"
+              id="mother_name"
+              required
+              autocomplete="off"
+              placeholder="Mother's name"
+            />
+
+            <!-- <label for="address">Address: </label> -->
+            <input
+              type="text"
+              name="address"
+              id="address"
+              required
+              autocomplete="off"
+              placeholder="Address"
+            />
+
+            <!-- <label for="pre_class">Previous Class: </label> -->
+            <input
+              type="text"
+              name="class"
+              id="pre_class"
+              required
+              autocomplete="off"
+              placeholder="Previous class"
+            />
+
+            <!-- <label for="year">Year of Passing (12th class): </label> -->
+            <input
+              type="number"
+              name="year"
+              id="year"
+              required
+              autocomplete="off"
+              placeholder="Year of passing (12th class)"
+            />
+
+            <!-- <label for="roll_no">Roll Number (12th class): </label> -->
+            <input
+              type="number"
+              name="roll_no"
+              id="roll_no"
+              required
+              autocomplete="off"
+              placeholder="Roll number (12th class)"
+            />
+
+            <!-- <label for="email">Email ID: </label> -->
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="off"
+              placeholder="Email ID"
+            />
+
+            <!-- <label for="ph_no">Contact Number: </label> -->
+            <input
+              type="number"
+              name="number"
+              id="ph_no"
+              required
+              autocomplete="off"
+              placeholder="Contact Number"
+            />
+            <div class="whats_no">
+              <label for="whatsapp">Same as WhatsApp: </label>
+              <input
+                type="checkbox"
+                name="whatsapp"
+                id="whatsapp"
+                required
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <h3 class="heading mar_heads">Gender and DOB:</h3>
+          <div class="gen_dob">
+            <div class="gen-sec">
+              <label for="male">Male: </label>
+              <input type="radio" name="gender" id="male" />
+
+              <label for="female">Female: </label>
+              <input type="radio" name="gender" id="female" />
+            </div>
+
+            <div class="dob_sec">
+              <label for="dob">DOB: </label>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                required
+                autocomplete="off"
+                placeholder="DOB"
+              />
+            </div>
+          </div>
+
+          <h3 class="heading mar_heads">COURSE DETAILS</h3>
+          <div class="course_sec">
+            <h3 class="heading">Stream</h3>
+            <select>
+              <option value="bba">BBA</option>
+              <option value="bca" selected>BCA</option>
+              <option value="b.tech">B.Tech</option>
+              <option value="bsc">BSC Nursing</option>
+            </select>
+
+            <h4 class="heading">Additional Subjects (min: 1/ max: 2)</h4>
+
+            <div class="add_sub">
+              <div>
+                <label for="evs">EVS</label>
+                <input type="checkbox" name="subjects" value="evs" id="evs" />
+              </div>
+
+              <div>
+                <label for="hrm">HRM</label>
+                <input type="checkbox" name="subjects" value="hrm" id="hrm" />
+              </div>
+
+              <div>
+                <label for="dis_mng">Disaster Management</label>
+                <input
+                  type="checkbox"
+                  name="subjects"
+                  value="disaster"
+                  id="dis_mng"
+                />
+              </div>
+
+              <div>
+                <h3 class="heading">Others</h3>
+                <select>
+                  <option value="com_skills">Communication Skills</option>
+                  <option value="info_tech">Information Technology</option>
+                  <option value="Nano_tech">Nano Technology</option>
+                  <option value="statistics">Statistics</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub_sec">
+            <div>
+              <input type="submit" value="Submit" class="sub_btn" />
+            </div>
+            <div>
+              <input type="reset" value="Reset" class="reset_btn" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
