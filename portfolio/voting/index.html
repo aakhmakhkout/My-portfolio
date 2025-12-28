@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="name">
+            <h1>Online Voting System</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Voting</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h2 class="heading">Voting System 2023</h2>
+        <div class="main-box">
+            <div class="main-para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat ut facere commodi odio aliquid? Suscipit, libero labore officia quasi tempora amet consequuntur cumque aliquam, magnam ipsa reiciendis dolores, quas nemo! Architecto, enim vel odit maxime, veniam dolorem in iusto doloribus distinctio impedit obcaecati perferendis nobis mollitia facere error! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequuntur ipsum quasi omnis cum debitis eos aliquid magnam sed explicabo totam, corrupti rerum distinctio nulla ab voluptas doloremque deserunt ratione quae fugiat possimus? Molestiae, officia quas? Sed tempore deserunt optio, facilis odio fuga consequatur aliquam nihil quasi. Numquam enim qui itaque ducimus cumque natus laborum maxime, aut doloribus, quia cupiditate nemo facere obcaecati ipsam error asperiores quo repellendus ea quae ipsum possimus odit! Similique eum delectus totam quae nulla tenetur dolorum quam quaerat omnis excepturi aliquid debitis ducimus accusamus nobis, voluptates quas voluptatem ratione illo eos iure? Suscipit, deleniti ex.</p>
+    </div>
+
+    <div class="main-img">
+        <img src="/images/img1.jpg" alt="v-img">
+    </div>
+</div>
+    </header>
+
+    <section>
+        <div class="p-sel">
+        <form action="/voting/voting.html" class="party-sel" id="parties" target="_main">
+            <h3 class="p-heading">PARTY SELECTION</h3>
+
+            <label for="ist-party">Select Ist Party</label>
+            <input type="text" name="v-id" id="ist-party" required autocomplete="off">
+
+            <label for="2nd-party">Select Second Party</label>
+            <input type="text" name="v-id" id="2nd-party" required autocomplete="off">
+
+           <label for="3rd-party">Select Third Party</label>
+            <input type="text" name="v-id" id="3rd-party" required autocomplete="off">
+
+            <!-- <label for="4rth-party">Select Fourth Party</label>
+            <input type="text" name="v-id" id="4rth-party"> -->
+
+            
+            <p class="note">Note: Check Parties before moving to next page!</p>
+
+            <p id="result" class="output"></p>
+
+            <input type="reset" value="Reset" class="btn">
+            <input type="submit" value="Next" class="btn" onclick="submitValue()" id="nex-btn">
+
+        </form>
+
+        <button value="Check" class="btn" onclick="check()">Check</button> 
+        
+    </div>
+    <script src="app.js"></script>
+<script>
+    function submitValue() {
+        var input1 = document.getElementById('ist-party');
+        var value1 = input1.value;
+
+        var input2 = document.getElementById('2nd-party');
+        var value2 = input2.value;
+
+        var input3 = document.getElementById('3rd-party');
+        var value3 = input3.value;
+
+        localStorage.setItem('myValue1', value1);
+        localStorage.setItem('myValue2', value2);
+        localStorage.setItem('myValue3', value3);
+
+        //window.location.href = '/voting/voting.html';
+    }
+</script>
+
+</body>
+</html>

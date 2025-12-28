@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .burger{
+            display: none;
+        }
+        
+        .line{
+            background-color: red;
+            width: 30px;
+            margin: 3px 3px;
+            height: 3px;
+        }
+        .menu{
+            transition:0.4s;
+
+        }
+        
+        @media (max-width: 600px){
+            .burger{
+                display: block;
+            }
+            
+            .nav-list{
+                transform: translate(-100%);
+            }
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar">
+<div class="burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+    </div>
+            <ul  class="menu nav-list">
+                <li>Home</li>
+                <li>contact</li>
+                <li>about</li>
+                <li>more</li>
+                <li>what</li>
+            </ul> 
+    </nav>
+</body>
+
+<script>
+var burger = document.querySelector('.burger');
+var navbar = document.querySelector('.navbar');
+var menu = document.querySelector('.menu');
+
+ burger.addEventListener('click', ()=> {
+    menu.classList.toggle('nav-list');
+ })
+    
+
+</script>
+</html>
